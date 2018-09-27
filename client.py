@@ -11,7 +11,8 @@ d = s.recv(1024) # each time recive 1k bytes.
 print('Client receives:%s ' % d.decode('utf-8'))
    
 # send data
-d = b'ADVANCE'
+usr_in = input('What do you want to send to server?:')
+d = bytes(usr_in, encoding = 'utf-8')
 s.sendall(d) # From python doc: Unlike send(), sendall() continues to send data from string until either all data has been sent or an error occurs.
 print('Client sends:%s ' % d.decode('utf-8'))
 
