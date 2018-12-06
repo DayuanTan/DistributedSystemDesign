@@ -1,0 +1,3 @@
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8080/HelloAxis2/services/listServices|*|http\://localhost\:8080/HelloAxis2/|*|http\://localhost\:8080/Axis2ServiceSum/services/listServices|*|http\://localhost\:8080/Axis2ServiceSum/|*|http\://localhost\:8080/Axis2ClientSum/WEB-INF/classes/com/javahelps/servicesum/ClientSum.java|*|http\://localhost\:8080/Axis2ServiceSum/services/ServiceSum?wsdl|*|http\://localhost\:8080/HelloAxis2/services/HelloService?wsdl|*|

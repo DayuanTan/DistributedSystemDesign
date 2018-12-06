@@ -1,0 +1,14 @@
+package com.javahelps.servicesum;
+
+public class ClientSum {
+	public static void main() throws Exception{
+		//Create the stub object
+		ServiceSumStub stub = new ServiceSumStub();
+		
+		//Create the request
+		HelloServiceStub.getSum request = new HelloServicStub.getSum();
+		
+		//Set the parameters
+		request.setA
+	}
+}

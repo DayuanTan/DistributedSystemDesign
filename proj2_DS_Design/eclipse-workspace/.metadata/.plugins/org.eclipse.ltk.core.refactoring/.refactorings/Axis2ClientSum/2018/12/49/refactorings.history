@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Axis2ClientSum/src/com/javahelps/servicesum/ClientSum.java&apos; to &apos;Client.java&apos;" description="Rename resource &apos;ClientSum.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/javahelps/servicesum/ClientSum.java" name="Client.java" stamp="1544042157109" updateReferences="true"/>
+</session>

@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Dec 05 17:16:02 EST 2018
+org.eclipse.jst.jee.server\:/binary\:/home/dayuan/eclipse-workspace/Axis2ClientSum/WebContent/axis2.war=axis2.war
+org.eclipse.jst.jee.server\:/binary\:/home/dayuan/eclipse-workspace/Axis2ServiceSum/WebContent/axis2.war=axis2.war
+org.eclipse.jst.jee.server\:/binary\:/home/dayuan/eclipse-workspace/HelloAxis2/WebContent/axis2.war=axis2.war

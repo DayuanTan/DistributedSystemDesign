@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.jst.ws.client.type.java">
+		<item value="http://localhost:8080/Axis2ServiceSum/services/ServiceSum?wsdl"/>
+		<item value="http://localhost:8080/HelloAxis2/services/HelloService?wsdl"/>
+	</list>
+</section>

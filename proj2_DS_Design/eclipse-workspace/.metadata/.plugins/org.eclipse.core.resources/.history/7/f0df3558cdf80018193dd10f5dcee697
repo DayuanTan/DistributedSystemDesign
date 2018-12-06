@@ -1,0 +1,20 @@
+package com.javahelps.servicesum;
+
+public class ClientSum {
+	public static void main(String[] args) throws Exception{
+		//Create the stub object
+		ServiceSumStub stub = new ServiceSumStub();
+		
+		//Create the request
+		ServiceSumStub.GetSum request = new ServiceSumStub.GetSum();
+		
+		//Set the parameters
+		request.setA((float)2);
+		request.setB((float)3);
+		
+		//Invoke the service
+		ServiceSumStub.GetSumResponse response = stub.getSum(request);
+		float res = response.get_return();
+		System.out.println("The sum is :" + res);	
+	}
+}

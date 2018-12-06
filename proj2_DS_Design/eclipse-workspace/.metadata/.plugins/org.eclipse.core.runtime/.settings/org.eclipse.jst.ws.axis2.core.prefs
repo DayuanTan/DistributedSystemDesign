@@ -1,0 +1,4 @@
+axis2RuntimeLocation=/home/dayuan/axis2-1.7.9
+cleintDatabinding=ADB
+eclipse.preferences.version=1
+serviceDatabinding=ADB
