@@ -10,7 +10,7 @@ Design a distributed system.
 
 I used ubuntu 16.04 in virtual box. Download both form offical website and create virtual machince.
 
-|Steps &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Reference links|Back-up web-page PDF|
+|Steps |Reference links|Back-up web-page PDF|
 |:-|:-:|-|
 |**Step 1: Install tomcat.** <br> I choice Tomcat 8.5.35, since I'm afarid new version may have conflict because this manual is old.|https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04.|<a href="proj2_DS_Design/r1.pdf">Install tomcat.</a>|
 |**Step 2: Install Axis2.** <br> Do everythin before "Installing Axis2 in a Servlet Container" part, we don't need servlet here.|https://axis.apache.org/axis2/java/core/docs/installationguide.html# | <a href="proj2_DS_Design/r2.pdf">Axis2</a>|
