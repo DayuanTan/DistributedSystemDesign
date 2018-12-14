@@ -19,6 +19,5 @@ I used ubuntu 16.04 in virtual box. Download both form offical website and creat
 |**Step 5: Setup a Hello service and client.**|https://www.javahelps.com/2016/04/apache-axis2-hello-world-using-eclipse.html| <a href="proj2_DS_Design/r5.pdf">Hello World.</a>|
 |**Maybe meet some issue like "Can not find the tag library descriptor for 'http://java.sun.com/jsp/jstl/core' "**|https://stackoverflow.com/questions/13285826/can-not-find-the-tag-library-descriptor-for-http-java-sun-com-jsp-jstl-core |<a href="proj2_DS_Design/r6.pdf">Maybe-Issue Solutions.</a>|
 |-|-|-|
-|Create Multi Tomcat instances. <br> 
-Note: should also cp whole webapps into /var/lib/tomcat7-a_or_b_or_c/webapps|https://madurad.wordpress.com/2014/07/17/installing-and-configuring-multiple-tomcat-server-instances/|<a href="proj2_DS_Design/r7.pdf">Create Multi Tomcat instances.</a>|
+|Create Multi Tomcat instances. <br> Note: should also cp whole webapps into /var/lib/tomcat7-a_or_b_or_c/webapps|https://madurad.wordpress.com/2014/07/17/installing-and-configuring-multiple-tomcat-server-instances/|<a href="proj2_DS_Design/r7.pdf">Create Multi Tomcat instances.</a>|
 ||||
