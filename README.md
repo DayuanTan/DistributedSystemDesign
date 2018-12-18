@@ -21,7 +21,7 @@ I used ubuntu 16.04 in virtual box. Download both form offical website and creat
 |**Step 6: Load balancer:**|||
 |**Create Multi Tomcat instances.** <br> Note: should also cp whole webapps into /var/lib/tomcat7-a_or_b_or_c/webapps|https://madurad.wordpress.com/2014/07/17/installing-and-configuring-multiple-tomcat-server-instances/|<a href="proj2_DS_Design/r7.pdf">Create Multi Tomcat instances.</a>|
 |**Doesn't Work!!! Skip this one!** ~~**Load balancing (mod_jk)**~~ <br> ~~Note: In step 4 should be ```sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/loadbalance.conf```~~ <br> ~~and in step 5~~ ~~`sudo a2ensiteloadbalance.com` should be `sudo a2ensite loadbalance.conf`, enabled site should be listed in /etc/apache2/sites-enabled~~|~~https://madurad.wordpress.com/2014/08/27/tomcat-server-loab-balancing-using-multiple-tomcat-server-instances-in-ubuntu/~~|<a href="proj2_DS_Design/r8.pdf">~~Load balancing.~~ </a> |
-|Call wsdl in web service.|https://clq9761.iteye.com/blog/976029|<a href="proj2_DS_Design/r9.pdf">wsdl in service.</a>|
+|**Call wsdl in web service.**|https://clq9761.iteye.com/blog/976029|<a href="proj2_DS_Design/r9.pdf">Call wsdl in service.</a>|
 |**Step 7: Setup Database MySQL.** <br>Setup Mysql on Ubuntu and in Java.|https://help.ubuntu.com/community/JDBCAndMySQL|<a href="proj2_DS_Design/r10.pdf">MySQL.</a>|
 ||||
 
