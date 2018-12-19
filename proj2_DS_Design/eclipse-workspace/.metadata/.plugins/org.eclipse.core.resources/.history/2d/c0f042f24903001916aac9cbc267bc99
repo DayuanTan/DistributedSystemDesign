@@ -1,0 +1,60 @@
+package com.javahelps.loadbaln;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Properties;
+
+import javax.swing.JOptionPane;
+
+public class LoadBaln {
+	public String whereServices(String serviceName) {
+		String methodPara = "", wsdl = "", namespace = "";
+		Connection c;
+		float r=0 ;
+		
+		if (serviceName.equals("sum")){
+			methodPara = "getSum";
+		}else if (serviceName.equals("subtract")){
+			methodPara = "getDiff";
+		}else if (serviceName.equals("multiply")){
+			methodPara = "getProduct";
+		}
+		
+		//find service WSDL form table
+		//the JDBC connector class
+		final String dbClassName = "com.mysql.cj.jdbc.Driver";
+		//connection string
+		final String CONNECTION = "jdbc:mysql://127.0.0.1/distributedSystemDesign";
+		try {
+			//load JDBC class
+			Class.forName(dbClassName).newInstance();
+			Properties p = new Properties();
+			p.put("user", "dayuan");
+			p.put("password", "1111");
+			//connect
+			c = DriverManager.getConnection(CONNECTION, p);
+			//sql query 
+			String sql = "Select wsdl,namespace,method,ipv4,port from distributedSystemDesign.servicesStatus where method = ? and active=1 and busy=0 limit 1";
+		
+			PreparedStatement pst = c.prepareStatement(sql);
+			pst.setString(1, methodPara);
+			//exe the query and get result
+			ResultSet rs = pst.executeQuery();
+			//iterate through the sql result
+			while(rs.next()) {
+				wsdl = rs.getString("wsdl");
+				namespace = rs.getString("namespace");
+			}
+
+			System.out.println("The return wsdl is:"  + wsdl);	
+			
+			c.close();
+		}
+		catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e);
+		} 
+		return "host:port/services2?wsdl";
+	}
+}

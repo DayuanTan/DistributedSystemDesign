@@ -1,0 +1,12 @@
+package com.javahelps.loadbaln;
+
+public class LoadBaln {
+	public String whereServices(String serviceName) {
+		if (serviceName.equals("hello")){
+			return "http://localhost:8080/Axis2ServiceHello/services/HelloService";
+		}else if (serviceName.equals("sum")) {
+			return "http://localhost:8080/Axis2ServiceSum/services/ServiceSum";
+		}
+		return "host:port/services2?wsdl";
+	}
+}

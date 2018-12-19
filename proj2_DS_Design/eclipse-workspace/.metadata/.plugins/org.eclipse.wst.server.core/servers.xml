@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
-    <list key="modules" value0="HelloAxis2::org.eclipse.jst.jee.server:HelloAxis2::jst.web::2.5" value1="Axis2ServiceSum::org.eclipse.jst.jee.server:Axis2ServiceSum::jst.web::2.5" value2="Axis2ClientSum::org.eclipse.jst.jee.server:Axis2ClientSum::jst.web::2.5"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost 8080-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost 8080" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="31">
+    <list key="modules" value0="Axis2ServiceSum::org.eclipse.jst.jee.server:Axis2ServiceSum::jst.web::2.5"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost 8082-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost (3)" name="Tomcat v8.5 Server at localhost 8082" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="46">
+    <list key="modules" value0="Axis2ServiceLoadBaln::org.eclipse.jst.jee.server:Axis2ServiceLoadBaln::jst.web::2.5"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost 8081-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost (2)" name="Tomcat v8.5 Server at localhost 8081" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="34">
+    <list key="modules" value0="Axis2ServiceMultiply::org.eclipse.jst.jee.server:Axis2ServiceMultiply::jst.web::2.5" value1="Axis2ServiceSubtract::org.eclipse.jst.jee.server:Axis2ServiceSubtract::jst.web::2.5"/>
   </server>
 </servers>

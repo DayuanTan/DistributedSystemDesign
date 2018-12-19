@@ -1,0 +1,7 @@
+package com.javahelps.serviceMultiply;
+
+public class ServiceMul {
+	public float getProduct(float a, float b) {
+		return a * b;
+	}
+}

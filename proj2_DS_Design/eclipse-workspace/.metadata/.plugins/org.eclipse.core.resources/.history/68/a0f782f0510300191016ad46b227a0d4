@@ -1,0 +1,7 @@
+package com.javahelps.serviceSubtract;
+
+public class ServiceSubtract {
+	public float getDiff(float a, float b) {
+		return a - b;
+	}
+}

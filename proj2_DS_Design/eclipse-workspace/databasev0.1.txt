@@ -1,0 +1,2 @@
+id,keywords,wsdl_url,QNameP1,QNameP2,busyValue
+1,sum,,http://serviceSum.javahelps.com,getSum,

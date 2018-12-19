@@ -3,4 +3,14 @@
 <fullyQualifiedTypeName name="com.javahelps.helloaxis.HelloServiceStub.SayHello"/>
 <fullyQualifiedTypeName name="com.javahelps.helloaxis.HelloServiceStub.SayHelloResponse"/>
 <fullyQualifiedTypeName name="com.javahelps.servicesum.ServiceSumStub.GetSumResponse"/>
+<fullyQualifiedTypeName name="com.javahelps.servicesubtract.ServiceSubtractStub.GetDiff"/>
+<fullyQualifiedTypeName name="com.javahelps.servicesubtract.ServiceSubtractStub.GetDiffResponse"/>
+<fullyQualifiedTypeName name="com.javahelps.loadbaln.LoadBalnStub.WhereServices"/>
+<fullyQualifiedTypeName name="com.javahelps.loadbaln.LoadBalnStub.WhereServicesResponse"/>
+<fullyQualifiedTypeName name="org.apache.axis2.AxisFault"/>
+<fullyQualifiedTypeName name="org.apache.axis2.client.Options"/>
+<fullyQualifiedTypeName name="com.javahelps.servicemultiply.ServiceMulStub.GetProduct"/>
+<fullyQualifiedTypeName name="com.javahelps.servicemultiply.ServiceMulStub.GetProductResponse"/>
+<fullyQualifiedTypeName name="com.javahelps.servicesubtract.ServiceSubtractStub"/>
+<fullyQualifiedTypeName name="com.javahelps.servicesubtract.ServiceSubtractStub.Active"/>
 </qualifiedTypeNameHistroy>

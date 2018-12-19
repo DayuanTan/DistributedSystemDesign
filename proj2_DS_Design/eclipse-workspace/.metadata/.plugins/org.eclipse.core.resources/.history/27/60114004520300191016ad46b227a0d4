@@ -1,0 +1,10 @@
+package com.javahelps.serviceMultiply;
+
+import java.util.concurrent.TimeUnit;
+
+public class ServiceMul {
+	public float getProduct(float a, float b) {
+		TimeUnit.SECONDS.sleep(2);
+		return a * b;
+	}
+}

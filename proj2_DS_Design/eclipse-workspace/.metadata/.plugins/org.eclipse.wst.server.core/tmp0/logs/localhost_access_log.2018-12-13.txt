@@ -1,0 +1,7 @@
+127.0.0.1 - - [13/Dec/2018:15:56:46 -0500] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [13/Dec/2018:15:56:47 -0500] "GET /HelloAxis2/axis2-web/css/axis-style.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Dec/2018:15:56:47 -0500] "GET /HelloAxis2/ HTTP/1.1" 200 3739
+127.0.0.1 - - [13/Dec/2018:15:56:47 -0500] "GET /HelloAxis2/axis2-web/images/axis_l.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [13/Dec/2018:15:56:47 -0500] "GET /HelloAxis2/axis2-web/images/asf-logo.gif HTTP/1.1" 304 -
+127.0.0.1 - - [13/Dec/2018:15:56:58 -0500] "GET /HelloAxis2/services/listServices HTTP/1.1" 200 4150
+127.0.0.1 - - [13/Dec/2018:15:59:49 -0500] "POST /HelloAxis2/services/HelloService.HelloServiceHttpEndpoint/sayHello HTTP/1.1" 200 150

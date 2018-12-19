@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Axis2ServiceMultiply/src/com/javahelps/multiply&apos; to &apos;serviceMultiply&apos;" description="Rename resource &apos;multiply&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/javahelps/multiply" name="serviceMultiply" stamp="1545054837426" updateReferences="true"/>
+</session>

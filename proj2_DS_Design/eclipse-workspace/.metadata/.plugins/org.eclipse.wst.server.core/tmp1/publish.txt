@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Dec 19 06:42:14 EST 2018
+org.eclipse.jst.jee.server\:/binary\:/home/dayuan/eclipse-workspace/Axis2ServiceMultiply/WebContent/axis2.war=axis2.war
+org.eclipse.jst.jee.server\:/binary\:/home/dayuan/eclipse-workspace/Axis2ServiceSubtract/WebContent/axis2.war=axis2.war

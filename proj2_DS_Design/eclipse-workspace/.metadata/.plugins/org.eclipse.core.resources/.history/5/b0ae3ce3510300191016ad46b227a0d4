@@ -1,0 +1,10 @@
+package com.javahelps.serviceSum;
+
+import java.util.concurrent.TimeUnit;
+
+public class ServiceSum {
+	public float getSum(float a, float b) {
+		TimeUnit.SECONDS.sleep(2);
+		return a + b;
+	}
+}

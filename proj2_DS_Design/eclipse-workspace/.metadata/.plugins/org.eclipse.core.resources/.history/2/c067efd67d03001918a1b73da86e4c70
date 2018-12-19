@@ -1,0 +1,133 @@
+package com.javahelps.maintainStatus;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import javax.swing.JOptionPane;
+import javax.xml.namespace.QName;
+
+import org.apache.axis2.addressing.EndpointReference;
+import org.apache.axis2.client.Options;
+import org.apache.axis2.rpc.client.*;
+
+public class MaintainStatus {
+	public static void main(String[] args) throws Exception{
+		Connection c;
+		ResultSet rs;
+		//the JDBC connector class
+		final String dbClassName = "com.mysql.cj.jdbc.Driver";
+		//connection string
+		final String CONNECTION = "jdbc:mysql://127.0.0.1/distributedSystemDesign";
+		try {
+			//load JDBC class
+			Class.forName(dbClassName).newInstance();
+			Properties p = new Properties();
+			p.put("user", "dayuan");
+			p.put("password", "1111");
+			//connect
+			c = DriverManager.getConnection(CONNECTION, p);
+			//sql query 
+			String sql = "select wsdl,namespace form distributedSystemDesign.servicesStatus";
+			PreparedStatement pst = c.prepareStatement(sql);
+			//exe the query and get result
+			rs = pst.executeQuery();
+			c.close();
+		}
+		catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e);
+		} 
+		
+		//iterate through the sql result
+		int rowcount = 0;
+		if (rs.last()) {
+			rowcount = rs.getRow();
+			rs.beforeFirst();
+		}
+		String[] wsdls = new String[rowcount];
+		String[] namespaces = new String[rowcount];
+		for (int i =0;i<rowcount;i++) {
+			rs.next();
+			wsdls[i] = rs.getString("wsdl");
+			namespaces[i] = rs.getString("namespace");
+		}
+		
+		while(1==1) {
+			//check whether active every half minute
+			TimeUnit.SECONDS.sleep(30);
+			
+			for (int i=0;i<wsdls.length;i++) {
+				//call webService using RPC
+				RPCServiceClient serviceClient = new RPCServiceClient();
+				Options options = serviceClient.getOptions();
+			
+				//Call webService URL
+				EndpointReference targetEPR = new EndpointReference(wsdls[i]);
+				options.setTo(targetEPR);
+			
+				//set parameters
+				Object[] opAddEntryArgs	= new Object[] {};
+				//set return's type's class object
+				Class[] classes = new Class[] {float.class};
+				//set method we want to call, parameters are (targetNamespace, targetMethod)
+				QName opAddEntry = new QName(namespaces[i],"active");
+				//call
+				float r = (float)(serviceClient.invokeBlocking(opAddEntry,opAddEntryArgs,classes)[0]);
+				System.out.print("Status of " + wsdls[i] + " is " + r);
+				
+				UpdateActive(wsdls[i], r);
+			}
+		}
+		
+	}
+	
+	public void UpdateActive(String wsdl, float activeStatus) throws Exception{
+		Connection c;
+	
+		//the JDBC connector class
+		final String dbClassName = "com.mysql.cj.jdbc.Driver";
+		//connection string
+		final String CONNECTION = "jdbc:mysql://127.0.0.1/distributedSystemDesign";
+		try {
+			//load JDBC class
+			Class.forName(dbClassName).newInstance();
+			Properties p = new Properties();
+			p.put("user", "dayuan");
+			p.put("password", "1111");
+			//connect
+			c = DriverManager.getConnection(CONNECTION, p);
+			//sql query 
+			String sql = "set SQL_SAFE_UPDATES=0";
+			PreparedStatement pst = c.prepareStatement(sql);
+			//exe the query and get result
+			ResultSet rs = pst.executeQuery();
+			//sql query 
+			sql = "update distributedSystemDesign.servicesStatus set ative= ? where method = ? and ipv4 = ? and port = ? ";
+			pst = c.prepareStatement(sql);
+			if ( activeStatus.compareTo(1.0) == 0){
+				pst.setInt(1, 1);//active
+			}else {
+				pst.setInt(1, 0);//false
+			}
+			pst.setString(2, methodPara);
+			pst.setString(3, ipv4);
+			pst.setString(4, port);
+			//exe the query and get result
+			pst.executeUpdate();
+			//sql query 
+			sql = "set SQL_SAFE_UPDATES=1";
+			pst = c.prepareStatement(sql);
+			//exe the query and get result
+			pst.executeQuery();
+			
+			
+			c.close();
+		}
+		catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e);
+		} 
+	}
+}

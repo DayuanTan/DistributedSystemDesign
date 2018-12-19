@@ -1,0 +1,10 @@
+package com.javahelps.loadbaln;
+
+public class LoadBaln {
+	public String whereServices(String serviceName) {
+		if (serviceName.equals("service1")){
+				return "host:port/services1?wsdl";
+		}
+		return "host:port/services2?wsdl";
+	}
+}

@@ -1,0 +1,34 @@
+package com.javahelps.servicesubtract;
+
+
+public class Client {
+	public static void main(String[] args) throws Exception{
+		//Create the stub object
+		ServiceSubtractStub stub = new ServiceSubtractStub();
+		
+		//Create the request
+		ServiceSubtractStub.Active request1 = new ServiceSubtractStub.Active();
+		//Invoke the service
+		ServiceSubtractStub.ActiveResponse response1 = stub.active(request1);
+		float res1 = response1.get_return();
+		System.out.println("The active return is :" + res1);
+		
+		//Create the request
+		ServiceSubtractStub.GetDiff request = new ServiceSubtractStub.GetDiff();
+		
+		for (float i = 10; i >0; i--) {
+			//Set the parameters
+			float a = i;
+			float b = i - 1;
+			request.setA(a);
+			request.setB(b);
+			
+			//Invoke the service
+			ServiceSubtractStub.GetDiffResponse response = stub.getDiff(request);
+			float res = response.get_return();
+			System.out.println("The diffrence of " + a +" and " + b + " is :" + res);	
+		}
+		
+		UpdateBusyTrue up = new UpdateBusyTrue();
+	}
+}
