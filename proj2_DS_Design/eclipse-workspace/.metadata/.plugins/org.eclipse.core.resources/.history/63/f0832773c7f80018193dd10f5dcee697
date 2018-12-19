@@ -1,9 +1,0 @@
-package com.javahelps.serviceSum;
-
-public class ServiceSum {
-	public float getSum(float a, float b) {
-		float s;
-		s = a + b;
-		return "The sum is " + s;
-	}
-}
