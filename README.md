@@ -25,6 +25,7 @@ I used ubuntu 16.04 in virtual box. Download both form offical website and creat
 |**Step 7: Setup Database MySQL.** <br>Setup Mysql on Ubuntu and in Java. <br> Setup database and table. <br> Install MySQL workbench: `sudo apt-get install mysql-workbench`|https://help.ubuntu.com/community/JDBCAndMySQL|<a href="proj2_DS_Design/r10.pdf">MySQL;</a> <br> <a href="proj2_DS_Design/mysql.log">sql log.</a>|
 |Download MySQL Connector/J and put it into `WebContent/WEB_INF/lib`|https://stackoverflow.com/questions/17484764/java-lang-classnotfoundexception-com-mysql-jdbc-driver-in-eclipse <br> https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.13||
 |**Connect MySQL form java.** <br> For `Eclipse` part, don't do that, put the jar into `lib`. <bar> And need use this class **`com.mysql.cj.jdbc.Driver`** to replace `com.mysql.jdbc.Drive`.|https://help.ubuntu.com/community/JDBCAndMySQL|<a href="proj2_DS_Design/r11.pdf">Connect MySQL form java.</a> |
+|Improve LoadBalancer. Check wsdl for each request form Client. Client update Busy when uses one service and release it after usage. Seperate application run every half minutes to check whether services are active or not and update Status Table.|||
 ||||
 
 
