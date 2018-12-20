@@ -3,27 +3,28 @@ import shutil
 import time
 
 
-# path = os.path.join(part1,part2)
+srcfilepath = os.path.join("172.16.193.129","home","dayuan","forGithubRepo","Proj2_DS_Design","byzantinFT","transactionLog.txt")
+oldMtime = time.ctime(os.stat(srcfilepath).st_mtime)
 
-filename = "transactionLog.txt"
-oldMtime = time.ctime(os.stat(filename).st_mtime)
+desfielpath = os.path.join("172.16.193.128","home","dayuan","forGithubRepo","Proj2_DS_Design","byzantinFT","transactionLog.txt")
+
 
 def fileCopy():
-    if (os.path.exists("transactionLog.txt") )  :
+    if (os.path.exists(srcfilepath) )  :
         print("Begin")
-        shutil.copyfile("transactionLog.txt", "transactionLog1.txt")
-        if os.path.exists("transactionLog1.txt"):
+        shutil.copyfile(srcfilepath, desfielpath)
+        if os.path.exists(desfielpath):
             print("Copy operation success!")
-        mtime1 = time.ctime(os.stat("transactionLog.txt").st_mtime)
-        mtime2 = time.ctime(os.stat("transactionLog1.txt").st_mtime)
-        print("Last modify time of transactionLog.txt is: ", mtime1)
-        print("Last modify time of transactionLog1.txt is: ", mtime2)
+        mtime1 = time.ctime(os.stat(srcfilepath).st_mtime)
+        mtime2 = time.ctime(os.stat(desfielpath).st_mtime)
+        print("Last modify time of {0} is: ".format(mtime1))
+        print("Last modify time of {0} is: ".format(mtime2))
         if mtime1 < mtime2:
             print("Good job!")
 
 if __name__ == "__main__":
-    if (os.path.exists("transactionLog.txt") )  :
-        mtime = time.ctime(os.stat("transactionLog.txt").st_mtime)
+    if (os.path.exists(srcfilepath) )  :
+        mtime = time.ctime(os.stat(srcfilepath).st_mtime)
         if mtime > oldMtime:
             fileCopy()
     

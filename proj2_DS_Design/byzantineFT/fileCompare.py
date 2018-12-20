@@ -9,8 +9,7 @@ def compare_file(file1, file2):
         sys.exit()
     else:
         print("Comparing {0} and {1}".format(file1, file2))
-    #text1_lines = read_file(file1)
-    #text2_lines = read_file(file2)
+    
       
     result = filecmp.cmp(file1,file2)
     return result
