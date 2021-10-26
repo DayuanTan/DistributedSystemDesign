@@ -5,7 +5,16 @@ This is a repostory for UMBC CMSC621 Operating System class projects.
 ## Project 1
 Socket. Create a new thread for each client connection.
 
+Requirement is [here](Project1.pdf)
+
+My report is [here](DayuanTan_proj1.pdf)
+
 ## Project 2
+
+Requirement is [here](project2_ds.pdf)
+
+My report is [here](DayuanTan_proj2.pdf)
+
 Design a distributed system. 
 
 I used ubuntu 16.04 in virtual box. Download both form offical website and create virtual machince.
