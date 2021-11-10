@@ -3,7 +3,7 @@
 This is a repostory for UMBC CMSC621 Operating System class projects.
 
 ## Project 1
-Socket. Create a new thread for each client connection.
+Socket. Create a new thread for each client connection. (py)
 
 Requirement is [here](Project1.pdf)
 
