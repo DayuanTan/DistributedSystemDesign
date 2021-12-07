@@ -7,7 +7,7 @@ Socket. Create a new thread for each client connection.
 
 Requirement is [here](Project1.pdf)
 
-# My report is [here](DayuanTan_proj1.pdf)
+# My proj1 report is [here](DayuanTan_proj1.pdf)
 
 ## Project 2 (Java)
 
@@ -25,7 +25,7 @@ proof of scalability and reliability.
 
 Requirement is [here](project2_ds.pdf)
 
-# My report is [here](DayuanTan_proj2.pdf)
+# My proj2 report is [here](DayuanTan_proj2.pdf)
 
 
 
